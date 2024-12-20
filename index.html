@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3.11.0/dist/email.min.js"></script>
+
+</head>
+<body>
+    <!-- 1st part -->
+    
+    <header>
+
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+
+        <a href="#" class="logo">Neetu</a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </header>
+
+    <!-- Home section -->
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h1>Hi, I'm Neetu</h1>
+            <span>and I'm a Full Stack Developer</span>
+            <p>Motivated Full Stack Developer with a
+                passion for building efficient, scalable web
+                applications. I bring hands-on experience in
+                both front-end and back-end development,
+                gained through internships and personal
+                projects. With a focus on solving real-world
+                problems, I have demonstrated strong problem
+                solving skills, attention to detail, and the ability
+                to deliver quality solutions. Eager to join a
+                dynamic team, contribute to impactful projects,
+                and continue learning from experienced
+                professionals to further enhance my skills.</p>
+
+            <button id ="downloadbtn" class="btn">Download CV</button>
+        </div>
+
+        <div class="home-img">
+            <!-- <img src="image/portfolio.webp" alt=""> -->
+            <img src="image/neetuimg.jpg" alt="">
+
+        </div>
+    </section>
+
+    <!-- 1st part ends -->
+
+    <!-- 2nd part start -->
+<section class="about" id="about">
+    <h1 class="heading"> <span> About </span> </h1>
+
+    <div class="row">
+        <div class="pic">
+            <img src="image/neetuimg.jpg" alt="">
+        </div>
+
+        <div class="content">
+            <p>My name is Neetu Shaw, and I'm from Kolkata, West Bengal. I hold a BSc in Computer Science from the University of Calcutta, which I completed in 2020. 
+                To further enhance my skills, I pursued courses in Java & DSA from Coding Ninjas and Full Stack Development from Apna College.
+                Recently, I completed an internship as a Software Engineer at BrainSightAI Company where I learnt about code implementations, testing datasets, and other operations.
+                I am excited about the opportunity to contribute my skills and experiences and to learn from the talented professionals. Thank you for considering my application.
+            </p>
+
+            <div class="content-section">
+                <!-- Buttons for toggling content -->
+                <div class="buttons">
+                    <button class="btns" id="eduBtn">Education</button>
+                    <button class="btns" id="skillsBtn">Skills</button>
+                    <button class="btns" id="expBtn">Experiences</button>
+                </div>
+            
+                <!-- Education Content -->
+                <section class="Education" id="Education">
+                    <h2 class="section-heading">Education</h2>
+                    <div class="education-details">
+                        <div class="education-item">
+                            <h3>Bachelor's of Science</h3>
+                            <p><strong>University of Calcutta</strong></p>
+                            <p>Graduated: 2020</p>
+                        </div>
+                        <div class="education-item">
+                            <h3>Class 12</h3>
+                            <p><strong>West Bengal Board of Secondary Education</strong></p>
+                            <p>Year: 2017</p>
+                        </div>
+                        <div class="education-item">
+                            <h3>Class 10</h3>
+                            <p><strong>ICSE</strong></p>
+                            <p>Year: 2015</p>
+                        </div>
+                    </div>
+                </section>
+            
+                <!-- Skills Content -->
+                <section class="Skills" id="Skills">
+                    <h2 class="section-heading">Skills</h2>
+                    <div class="skills-grid">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>MongoDB</span>
+                        <span>Node.js</span>
+                        <span>Express.js</span>
+                        <span>Restful APIs</span>
+                        <span>React.Js</span>
+                        <span>Java</span>
+                    </div>
+                </section>
+            
+                <!-- Experience Content -->
+                <section class="Experiences" id="Experiences">
+                    <h2 class="section-heading">Experiences</h2>
+                    <div class="experience-details">
+                        <div class="experience-item">
+                            <h3>Software Engineer Intern</h3>
+                            <p class="company">BrainSightAI</p>
+                            <p class="duration">02/2024 - 07/2024</p>
+                            <p><strong>Code Implementations:</strong> Designed HRBAC Sign-In Flow, automated email fetching, and created user-subject graphs.</p>
+                            <p><strong>Testing:</strong> Uploaded test datasets to VBExplore.</p>
+                            <p><strong>Operations:</strong> Managed report reruns, storage cleanup, bug logging, and created detailed documentation.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+    <!-- 2nd part ends -->
+
+    <!-- 3rd part -->
+    
+    <section class="projects" id="projects">
+        <h1 class="heading"><span>Projects</span></h1>
+        <div class="projects-container">
+            <!-- Card for Airbnb Hotel Booking Website -->
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <video width="100%" height="auto" controls muted>
+                            <source src="videos/Airbnb video 30 sec.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>                        
+                        <h2>Airbnb Hotel Booking Website</h2>
+                        <button class="flip-btn" onclick="flipCard(this)">See Details</button>
+                    </div>
+                    <div class="flip-card-back">
+                        <h2>Airbnb Hotel Booking Website</h2>
+                        <p>Developed a full-stack Airbnb-style hotel booking website with user authentication, property listing, and reviews.</p>
+                        <h2><b>Technologies:</b></h2>
+                        <p>Node.js, Express, MongoDB, EJS, Passport.js, Mongoose, HTML, CSS</p>
+                        <button  class="view-btn"onclick="openModal('Airbnb Hotel Booking Website', 'Developed a full-stack Airbnb-style hotel booking website with user authentication, property listing, and reviews.', 'https://major-project-nsx9.onrender.com/listings')">View Project</button>
+                        <button class="view-btn" onclick="flipCard(this)">Back to Front</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <video width="100%" height="auto" controls muted>
+                            <source src="videos/Weather-App-record (1).mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>                        
+                        <h2>Weather-App</h2>
+                        <button class="flip-btn" onclick="flipCard(this)">See Details</button>
+                    </div>
+                    <div class="flip-card-back">
+                        <h2>Weather-App</h2>
+                        <p>This project is a Weather App built using React and Redux with TypeScript. 
+                        It provides users with detailed weather information for selected cities, the ability to add cities to a favorites list, and persistence through local storage. 
+                        The app consists of three main sections: Home Page, Cities Page, and an Add City Modal.</p>
+                        <h2><b>Technologies:</b></h2> 
+                        <p>React, Redux, TypeScript, Axios, Open WeatherMapAPI, CSS</p>
+                        <button class="view-btn" onclick="openModal('Weather-App', 'This project is a Weather App built using React and Redux with TypeScript. It provides users with detailed weather information for selected cities, the ability to add cities to a favorites list, and persistence through local storage. The app consists of three main sections: Home Page, Cities Page, and an Add City Modal.', 'https://github.com/NeetuShaw/Weather-App')">View Project</button>
+                        <button class="view-btn" onclick="flipCard(this)">Back to Front</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <video width="100%" height="auto" controls muted>
+                            <source src="videos/Rule-Engine-video_1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>                             
+                        <h2> Rule-Engine-with-AST</h2>
+                        <button class="flip-btn" onclick="flipCard(this)">See Details</button>
+                    </div>
+                    <div class="flip-card-back">
+                        <h2> Rule-Engine-with-AST</h2>
+                        <p>The Rule Engine with AST is a three-tier application for evaluating
+                            user eligibility based on configurable rules using an Abstract Syntax
+                            Tree (AST). It features a Node.js/Express backend with APIs, a React
+                            frontend, and MongoDB for storage. Users can dynamically create,
+                            combine, and evaluate complex rules for efficient decision-making. </p>
+                        <h2><b>Technologies:</b></h2> <p><b>Frontend:</b> React <b>Backend:</b> Node.js, Express
+                            Database: MongoDB.</p>
+                        <button class="view-btn" onclick="openModal('Rule-Engine-with-AST', 'The Rule Engine with AST is a three-tier application for evaluating user eligibility based on configurable rules using an Abstract Syntax Tree (AST). It features a Node.js/Express backend with APIs, a React frontend, and MongoDB for storage. Users can dynamically create, combine, and evaluate complex rules for efficient decision-making. ', 'https://github.com/NeetuShaw/Rule-Engine-with-AST')" class="view-btn">View Project</button>
+                        <button class="view-btn" onclick="flipCard(this)">Back to Front</button>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <video width="100%" height="auto" controls muted>
+                            <source src="videos/slot machine.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>                             
+                        <h2> Slot Machine Mini-Game</h2>
+                        <button class="flip-btn" onclick="flipCard(this)">See Details</button>
+                    </div>
+                    <div class="flip-card-back">
+                        <h2>Slot Machine Mini-Game</h2>
+                        <p>Build a simple React-based slot machine component, where users can spin reels to get items like weapons, consumables, or materials for a shooter game like PubG. 
+                           It should have a spin button and display the rewards awarded by (item type, rarity, and count). </p>
+                        <h2><b>Technologies:</b></h2> <p>   <b>React.Js </b></p>
+                        <button class="view-btn" onclick="openModal('Slot Machine Mini-Game', 'Build a simple React-based slot machine component, where users can spin reels to get items like weapons, consumables, or materials for a shooter game like PubG. It should have a spin button and display the rewards awarded by (item type, rarity, and count).', 'https://github.com/NeetuShaw/Slot-Machine-Mini-Game')" class="view-btn">View Project</button>
+                        <button class="view-btn" onclick="flipCard(this)">Back to Front</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="btnss" id="load-more-projects">See More Projects</button>
+        <!-- Modal for more project details -->
+        <div id="project-modal" class="modal hidden">
+            <div class="modal-content">
+               <span class="close-modal">&times;</span>
+               <h2 id="modal-title">Project Name</h2>
+               <p id="modal-description">Detailed description of the project will go here.</p>
+               <a id="modal-link" href="#" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>
+    
+     <!-- 4th part strt -->
+
+     <section class="contact" id="contact">
+        <h1 class="heading"><span>Contact</span></h1>
+    
+        <div class="row">
+            <form id="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Your Name" class="box" required>
+    
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Your Email" class="box" required>
+    
+                <label for="number">Phone Number</label>
+                <input type="number" id="number" placeholder="Your Phone Number" class="box" required>
+    
+                <label for="message">Message</label>
+                <textarea id="message" class="box" placeholder="Write your message here..." cols="30" rows="10" required></textarea>
+    
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+     <!-- 4th part ends -->
+
+     <!-- 5th footer part -->
+
+     <section class="footer">
+
+        <div class="box">
+            <h1>Contact Info</h1>
+            <h2>Feel free to reach out to me.</h2>
+            <a href="#" class="contact-item"><i class="fa-solid fa-location-dot"></i> Address: Kolkata, India - 712311</a>
+            <a href="tel:+919883662453" class="contact-item"><i class="fa-solid fa-phone"></i> Contact: +91 9883662453</a>
+            <a href="mailto:nitushaw109@gmail.com" class="contact-item"><i class="fa-regular fa-envelope"></i> Email: nitushaw109@gmail.com</a>
+            <a href="https://github.com/NeetuShaw" class="contact-item"><i class="fa-brands fa-github"></i> GitHub Profile</a>
+        <!-- </div> -->
+        <div class="find">
+            <h2>Find:</h2>
+            <a href="https://www.instagram.com/yourusername"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/neetushaw109a/"><i class="fa-brands fa-linkedin"></i> </a>
+            <a href="https://github.com/NeetuShaw"><i class="fa-brands fa-github"></i> </a>
+            <a href="nitushaw109@gmail.com"><i class="fa-brands fa-google"></i> </a>
+        </div>
+        </div>
+
+        
+         <div class="credit"> 
+            Created By Neetu | All Right Reserved
+        </div>
+
+     </section>
+
+     <script src= app.js></script>
+</body>
+</html>
+
